@@ -1,11 +1,11 @@
-#include<stdio.h>
-int main(int argc, char *argv[]) {
-    int up,tall;
-    while(scanf("%d%d",&up,&tall)!=EOF)
-    printf("%d\n",up+tall);
+#include <iostream>
+using namespace std;
 
+int main() {
+    int up, tall;
+    while (cin >> up >> tall) {
+        cout << up + tall << endl;
+    }
 
-
-
-	return 0;
+    return 0;
 }
