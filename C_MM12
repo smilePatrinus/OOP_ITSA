@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+
+int main() {
+    float dis;
+
+    while (cin >> dis) {
+        int result = static_cast<int>(ceil((dis * 100) / 23.8));
+        cout << result << endl;
+    }
+
+    return 0;
+}
