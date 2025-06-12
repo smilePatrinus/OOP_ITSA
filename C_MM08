@@ -1,0 +1,12 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    long long int up, down;
+
+    while (cin >> up >> down) {
+        cout << (up + down) * (up + down) << endl;
+    }
+
+    return 0;
+}
