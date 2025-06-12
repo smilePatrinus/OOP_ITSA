@@ -1,0 +1,15 @@
+#include <iostream>
+#include <iomanip>
+#include <cmath>
+using namespace std;
+
+int main() {
+    double up;
+
+    while (cin >> up) {
+        up *= up;
+        cout << fixed << setprecision(1) << round(up * 10) / 10 << endl;
+    }
+
+    return 0;
+}
