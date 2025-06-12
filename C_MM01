@@ -1,0 +1,15 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    float up, down, tall;
+
+    // 使用 cin/cout 與 fixed, setprecision 控制輸出格式
+    while (cin >> up >> down >> tall) {
+        cout << fixed << setprecision(1);
+        cout << "Trapezoid area:" << (up + down) * tall / 2 << endl;
+    }
+
+    return 0;
+}
