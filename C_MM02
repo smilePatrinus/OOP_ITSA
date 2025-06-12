@@ -1,11 +1,11 @@
-#include<stdio.h>
-int main(int argc, char *argv[]) {
-    float up,tall;
-    scanf("%f%f",&up,&tall);
-    printf("%.1f\n",up*tall/2);
+#include <iostream>
+#include <iomanip>
+using namespace std;
 
+int main() {
+    float up, tall;
+    cin >> up >> tall;
+    cout << fixed << setprecision(1) << up * tall / 2 << endl;
 
-
-
-	return 0;
+    return 0;
 }
