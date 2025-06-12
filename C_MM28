@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+
+    while (cin >> N) {
+        bool first = true;  // 控制是否為第一個符合條件的數
+
+        for (int i = 1; i <= N; i++) {
+            if (i % 5 == 0 && i % 7 == 0) {
+                if (first) {
+                    cout << i;
+                    first = false;
+                } else {
+                    cout << " " << i;
+                }
+            }
+        }
+
+        cout << endl;
+    }
+
+    return 0;
+}
