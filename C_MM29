@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int n = 0, max = 2;
+    cin >> n;
+
+    for (int k = 2; k < n; k++) {
+        bool isComposite = false;  // 標記是否為合數
+
+        for (int i = 2; i < k; i++) {
+            if (k % i == 0) {
+                isComposite = true;
+                break;
+            }
+        }
+
+        if (!isComposite) {
+            max = k;
+        }
+    }
+
+    cout << max << endl;
+    return 0;
+}
