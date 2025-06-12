@@ -1,0 +1,21 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+
+int main() {
+    double min, timemon;
+    double money;
+
+    while (cin >> min >> timemon) {
+        if (min <= 60)
+            money = min * timemon;
+        else if (min < 121)
+            money = (min - 60) * timemon * 1.33 + 60 * timemon;
+        else
+            money = (min - 120) * timemon * 1.66 + 60 * timemon * 1.33 + 60 * timemon;
+
+        cout << fixed << setprecision(1) << money << endl;
+    }
+
+    return 0;
+}
