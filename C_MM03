@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(int argc, char *argv[]) {
+    int up,tall;
+    while(scanf("%d%d",&up,&tall)!=EOF)
+    printf("%d\n",up+tall);
+
+
+
+
+	return 0;
+}
