@@ -1,0 +1,11 @@
+#include<stdio.h>
+int main(int argc, char *argv[]) {
+    float up,tall;
+    scanf("%f%f",&up,&tall);
+    printf("%.1f\n",up*tall/2);
+
+
+
+
+	return 0;
+}
